@@ -1,0 +1,58 @@
+/* .navbar-brand img{
+    /* position: relative; 
+    height: 50px;
+}*/
+html {
+    background-color: #E9ECEF;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.imagination {
+    background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url(https://wallpapercave.com/wp/wp9486474.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px 0;
+}
+
+.carousel-indicators {
+    bottom: -5%;
+    /* background-color: red; */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #111;
+}
+
+.page-6 {
+    position: relative;
+}
+
+.kamfiya {
+    background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9));
+}
+
+.custom-shape-divider-top-1694194474 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694194474 svg {
+    position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    height: 81px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1694194474 .shape-fill {
+    fill: #E9ECEF;
+}

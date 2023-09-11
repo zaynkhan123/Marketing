@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARKETING</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+</head>
+
+<body>
+
+  <div id="main" style="font-family: apple;" class="container-fluid bg-body-secondary">
+    <nav class="navbar navbar-expand-lg navbar bg-body-secondary p-1">
+      <div class="container-fluid mx-3 fs-6">
+        <a class="navbar-brand" href="#"><img src="./Screenshot_2023-07-30_183414-removebg-preview (1).png"
+            style="height: 50px; width: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="margin-top: -10vh;">
+            <li class="nav-item">
+              <a class="nav-link mx-3 active text-capitalize" aria-current="page" href="./">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3 text-capitalize" href="./About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3 text-capitalize" href="#page-4">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3 text-capitalize" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="my-2 ms-auto">
+            <button class="btn btn-outline-secondary text-uppercase fs-6 px-3 py-1" data-bs-toggle="modal"
+              data-bs-target="#log-inModal ">log-in</button>
+            <button class="btn btn-outline-secondary text-uppercase fs-6 px-3 py-1" data-bs-toggle="modal"
+              data-bs-target="#sign-upModal">sign-up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sign-up-model -->
+    <div class="modal fade" id="sign-upModal" tabindex="-1" aria-labelledby="sign-upModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="sign-upModalLabel">create Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+
+            <form class="row g-3">
+              <div class="col-md-6">
+                <!-- <label for="inputEmail4" class="form-label my-3 mx-1">Enter email</label> -->
+                <input type="email" class="form-control my-4" id="inputEmail4" placeholder="enter email">
+              </div>
+              <div class="col-md-6">
+                <input type="password" class="form-control my-4" id="inputPassword4"
+                  placeholder="create strong password">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label mx-1">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="current address">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label mx-1">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label mx-1">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>M.P</option>
+                  <option>U.P</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input " type="checkbox" id="gridCheck">
+                  <label class="form-check-label mx-1" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">created</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- log-in-model -->
+    <div class="modal fade" id="log-inModal" tabindex="-1" aria-labelledby="log-inModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title  text-uppercase" id="log-inModalLabel">nation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">log-in</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="page-1 d-flex flex-column justify-content-center align-items-start overflow-hidden bg-body-secondary  position-relative mh-100"
+      data-scroll data-scroll-speed=" -.5 " style="background-color:#dadada; width: 100%; max-height: 100vh;">
+
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+            <h1 class="k text-capitalize w-100 text-md-start text-center color-grey mb-2"
+              style="font-size: calc(100% + 2.5vw + 1vh); margin-left: -150%;">we <span
+                style="color:#E65E36; font-family: voyage;">are</span> working with pass<span class="text-lowercase"
+                style="color:#E65E36; font-family: voyage;">ions</span></h1>
+            <p class="A w-100 text-md-start text-center mt-2" style="margin-left: -100vw;">Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit.
+              Expedita mollitia voluptates illum nisi quidem quae, earum asperiores reprehenderit modi repellendus
+              commodi dolorem laboriosam dignissimos cumque id officia consequatur corporis totam distinctio maxime
+              magnam incidunt ipsam voluptatibus! Atque eius eos, tenetur quis non placeat asperiores molestias beatae
+              tempore, officia laboriosam? Sed.</p>
+            <div class="text-center w-100 text-md-start mt-3">
+              <div class="btn btn-outline-primary text-uppercase px-3 py-1">explore</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="text-center">
+              <img src="./Online Class.png" class="M w-100 text-center" style="opacity: 0;;" alt="">
+              <h2 class="text-center w-100 text-md-center mt-1 color-grey text-capitalize"
+                style="font-size: calc(100% + .9vw + 1vh);">universal <br> connection</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-2 bg-body-secondary mh-100 py-5 overflow-hidden">
+      <div class="container text-center text-center w-100 mh-100">
+        <h2 class="R text-capitalize color-grey mt-5"
+          style="font-size: calc(100% + 2vw + 1vh); opacity: 0; transition: 0.9 ease;"> what we will do for
+          <br> your bussiness
+        </h2>
+      </div>
+
+      <div class="container mt-5">
+        <div class="N row mb-4 g-5" style="opacity: 0; transition: 0.9 ease;">
+          <div class="col-12 col-lg-4 col-md-12 mb-2 mt-5" style=" width: object-fit;">
+            <div class="text-center rounded-3" style="border: 2px solid #2222;">
+              <img src="./Website Ads.png" alt="web" class="img-fluid" style="width: 200px; ">
+
+              <h5 class="text-capitalize text-center my-2 fs-3">website adss</h5>
+
+              <p class="mb-4 text-center mt-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicingelit. Iure animi
+                necessitatibus <br> fuga corrupti dictbra veniam cumque nulla <br> sint natus ad sunt sequi earum,
+                voluptatum <br> aliquid fugit alias quo commodi <br> quisquam! </p>
+
+              <div class="btn btn-outline-secondary mb-3 px-3 py-0 text-uppercase"> more</div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-4 col-md-12 mb-2 mt-5 shadow" style=" width: object-fit;">
+            <div class="text-center rounded-3" style="border: 2px solid #2222;">
+              <img src="./Web Ads.png" alt="web" class="img-fluid" style="width: 180px; ">
+
+              <h5 class="text-capitalize text-center my-2 fs-3">addition-concept</h5>
+
+              <p class="mb-4 text-center mt-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicingelit.Iure animi
+                necessitatibus <br> fuga corrupti dictbra veniam cumque nulla <br> sint natus ad sunt sequi earum,
+                voluptatum <br> aliquid fugit alias quo commodi <br> quisquam! </p>
+
+              <div class="btn btn-outline-secondary mb-3 px-3 py-0 text-uppercase"> more</div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-4 col-md-12 mb-2 mt-5" style=" width: object-fit;">
+            <div class="text-center rounded-3" style="border: 2px solid #2222;">
+              <img src="./Team Network.png" alt="web" class="img-fluid" style="width: 190px; ">
+
+              <h5 class="text-capitalize text-center my-2 fs-3">team-network</h5>
+
+              <p class="mb-4 text-center mt-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicingelit.Iure animi
+                necessitatibus <br> fuga corrupti dictbra veniam cumque nulla <br> sint natus ad sunt sequi earum,
+                voluptatum <br> aliquid fugit alias quo commodi <br> quisquam! </p>
+
+              <div class="btn btn-outline-secondary mb-3 px-3 py-0 text-uppercase"> more</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="page-3 bg-body-secondary mh-100 mb-2 imagination rounded-3">
+      <div class="container ">
+
+        <div class="row ">
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="one mt-2">
+              <img src="./Online Shopping.png" class="img-fluid mt-5" style="width: 500px;" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start mt-5">
+            <h1 class="text-capitalize w-100 text-md-start text-center color-grey mb-2 mt-4"
+              style="font-size: calc(100% + 2vw + 1vh); color: #dadada;">steps <span style="color: #C0564A;"> to
+              </span>build <br> a sucessful <span style="color: #C0564A;">digital</span> <br> store</h1>
+            <p class="w-100 text-md-start text-center mt-3" style="color: #dadada;">Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Expedita mollitia voluptates illum nisi quidem quae, earum asperiores
+              reprehenderit modi repellendus commodi dolorem laboriosam dignissimos cumque id officia consequatur
+              corporis totam distinctio maxime magnam incidunt ipsam voluptatibus! Atque eius eos, tenetur quis non
+              placeat asperiores molestias beatae tempore, officia laboriosam? Sed.</p>
+            <div class="text-center w-100 text-md-start mt-3">
+              <div class="btn btn-outline-danger text-uppercase px-3 py-1 mb-2">explore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-4" class="page-4 bg-body-secondary mh-100 overflow-hidden">
+      <div class="container text-center text-center w-100 mh-100">
+        <h2 class="S text-capitalize color-grey mt-5"
+          style="font-size: calc(100% + 2vw + 1vh); opacity: 0; transition: 0.9 ease;"> connecting <span
+            style="color: #333; font-style: italic;">people's</span><br> to <span
+            style="color: #333; font-style: italic;">share</span> the idea </h2>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+          <div class="O col-12 col-lg-6" style="margin-left: 200vw; transition: 0.9s ease;">
+            <div class="one px-3 py-4 shadow mb-2 d-flex">
+              <img src="./Online Shopping.png " class="d-md-block d-none img-fluid w-25" alt="">
+              <div class="text-start">
+                <h3 class="mx-4 text-capitalize">shops...</h3>
+                <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officia? Sed
+                  deserunt obcaecati tempora, distinctio culpa dolores a repellendus corrupti?</p>
+              </div>
+            </div>
+          </div>
+          <div class="F col-12 col-lg-6" style="margin-right: -200vw; transition: 0.9s ease;">
+            <div class="one px-3 py-4 shadow mb-2 d-flex">
+              <img src="./Team Network.png" class="d-md-block d-none img-fluid py-2 w-25" alt="">
+              <div class="text-start">
+                <h3 class="mx-4 text-capitalize text-grey">networks</h3>
+                <p class="mx-4 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dignissimos
+                  eligendi laboriosam ab cumque eum nisi dolore quo laudantium nihil!</p>
+              </div>
+            </div>
+          </div>
+          <div class="I col-12 col-lg-6" style="margin-right: 200vw; transition: 0.9s ease; opacity: 0;">
+            <div class="one px-3 py-4 shadow mb-2 d-flex">
+              <img src="./Web Ads.png" class="d-md-block d-none img-fluid w-25" alt="">
+              <div class="text-start">
+                <h3 class="mx-4 text-capitalize text-grey">web-site</h3>
+                <p class="mx-4 my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe inventore asperiores
+                  aut at, beatae quo et nobis doloremque totam. Repellendus?</p>
+              </div>
+            </div>
+          </div>
+          <div class="Y col-12 col-lg-6" style="margin-left: -200vw; transition: 0.9s ease; opacity: 0;">
+            <div class="one px-3 py-4 shadow mb-5 d-flex">
+              <img src="./Online Class.png" class="d-md-block d-none img-fluid w-25" alt="">
+              <div class="text-start">
+                <h3 class="mx-4 text-capitalize text-grey">connection</h3>
+                <p class="mx-4 my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero earum eius officiis
+                  a accusantium fuga sequi tempore repudiandae molestiae laborum!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-5 bg-body-secondary mh-100">
+      <div class="container-fluid">
+        <h2 class=" text-capitalize color-grey mt-5 text-center" style="font-size: calc(100% + 2vw + 1vh); "> what <span
+            style="color: #C0564A; font-style: italic;">client </span> say <br> about<span
+            style="color: #C0564A; font-style: italic;"> us</span></h2>
+      </div>
+
+      <!-- carausel -->
+      <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-4 hw-100">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mb-3">
+
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://nmsconsulting.com/wp-content/uploads/2022/02/Oksana-Demchenko-1024x1024.jpg"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Advicer</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://imaginlook.com/wp-content/uploads/2018/09/member-9.jpg"
+                      class="card-img-top img-fuild" style="height: 278px;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Neaved</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">watch-learn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img
+                      src="https://images.squarespace-cdn.com/content/v1/5a214e29017db217adb97312/b4fc6549-0452-444b-993c-69dd0cf120f9/IMG_6376+-+Hilary+Sheinbaum.jpg?format=500w"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Analyist</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://nmsconsulting.com/wp-content/uploads/2022/02/Oksana-Demchenko-1024x1024.jpg"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Advicer</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://imaginlook.com/wp-content/uploads/2018/09/member-9.jpg"
+                      class="card-img-top img-fuild" style="height: 278px;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Neaved</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">watch-learn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img
+                      src="https://images.squarespace-cdn.com/content/v1/5a214e29017db217adb97312/b4fc6549-0452-444b-993c-69dd0cf120f9/IMG_6376+-+Hilary+Sheinbaum.jpg?format=500w"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Analyist</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row g-3">
+                <div class="col-12 col-lg-4 d-flex justify-content-center ">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://nmsconsulting.com/wp-content/uploads/2022/02/Oksana-Demchenko-1024x1024.jpg"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Advicer</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img src="https://imaginlook.com/wp-content/uploads/2018/09/member-9.jpg"
+                      class="card-img-top img-fuild" style="height: 278px;" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Neaved</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100 text-capitalize">watch-learn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                  <div class="card p-1" style="width: 18rem;">
+                    <img
+                      src="https://images.squarespace-cdn.com/content/v1/5a214e29017db217adb97312/b4fc6549-0452-444b-993c-69dd0cf120f9/IMG_6376+-+Hilary+Sheinbaum.jpg?format=500w"
+                      class="card-img-top img-fuild" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Analyist</h5>
+                      <p class="card-text text-center">Some quick example text to build on the card title and make up
+                        the
+                        bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-secondary text-center w-100">explore-course</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+
+    <div class="page-6 bg-body-secondary mh-100 my-3 kamfiya">
+
+      <div class="custom-shape-divider-top-1694194474">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="container text-center text-center p-5">
+        <h2 class=" text-capitalize color-grey mt-5" style="font-size: calc(100% + 1.5vw + 2vh); color: #dadada;">
+          contact us
+        </h2>
+      </div>
+      <div class="container d-flex flex-column">
+        <form class="mx-auto">
+          <div class="row mb-4">
+            <div class="col-12 col-lg-6">
+              <label for="exampleFormControlInput1" class="form-label mx-1" style="color: #dadada;">Username </label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label for="exampleFormControlInput1" class="form-label mx-1" style="color: #dadada;">Number</label>
+              <input type="number" class="form-control">
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label" style="color: #dadada;">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+          <div class="mb-4">
+            <label for="exampleFormControlTextarea1" class="form-label" style="color: #dadada;">Queries</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-4 mb-3">Submit</button>
+        </form>
+        <div class="row mx-auto my-3">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="image px-5">
+              <img src="./Call Chat.png" class="d-md-block d-none img-fluid mx-2"
+                style="width: 150px; cursor: pointer; " alt="call chat">
+            </div>
+            <div class="image2 px-5">
+              <img src="./Email.png" class=" d-md-block d-none img-fluid mx-5" style="width: 80px; cursor: pointer; "
+                alt="">
+            </div>
+            <div class="image3 px-5">
+              <img src="./Map.png" class=" d-md-block d-none mx-5" style="width: 80px; cursor: pointer; " alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center" style="border-bottom: 1px solid #dadada;">
+          <div class="col-4 col-lg-2 mt-3" style="color: #dadada;">
+            <h3 class="text-capitalize mx-4"> about</h3>
+            <ul>
+              <li> Overview</li>
+              <li> leadership</li>
+              <li> hightlights</li>
+              <li> guest-a-honour</li>
+              <li> enquiry formed</li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg-2 mt-3" style="color: #dadada;">
+            <h3 class="text-capitalize mx-4"> about</h3>
+            <ul>
+              <li> Overview</li>
+              <li> leadership</li>
+              <li> hightlights</li>
+              <li> guest-a-honour</li>
+              <li> enquiry formed</li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg-2 mt-3" style="color: #dadada;">
+            <h3 class="text-capitalize mx-4"> about</h3>
+            <ul>
+              <li> Overview</li>
+              <li> leadership</li>
+              <li> hightlights</li>
+              <li> guest-a-honour</li>
+              <li> enquiry formed</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 mt-3 mb-2 text-center" style="border-left: 1px solid #dadada;">
+            <img src="./Screenshot_2023-07-30_183414-removebg-preview (1).png" class="img-fluid" style="height: 155px;"
+              alt="">
+          </div>
+        </div>
+      </div>
+      <footer class="container mt-5" style="color: #dadada;">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020–2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    </div>
+
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
